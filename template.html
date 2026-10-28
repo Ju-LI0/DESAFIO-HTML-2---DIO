@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de Projeto - HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--MENU DE NAVEGAÇÃO-->
+    <nav>
+        <ul>
+            <li><a href="#Home">Página Inicial</a></li>
+            <li><a href="#Sobre">Sobre a Clínica</a></li>
+            <li><a href="#Horario">Horário de Atendimento</a></li>
+            <li><a href="#Contato">Contato</a></li>
+        </ul>
+    </nav>
+    <section id="Home">
+        <main>
+            <h2>Bem-vindo à Clínica de Saúde</h2>
+            <p>Oferecemos um atendimento humanizado, focado no bem-estar e na qualidade de vida dos nossos pacientes. Contamos com uma equipe multidisciplinar altamente qualificada e pronta para cuidar de você e de toda a sua família.</p>
+        </main>
+    </section>
+
+    <hr>
+    <!--SOBRE A CLINICA-->
+    <section id="Sobre">
+        <header>
+            <h2>Sobre a Clínica</h2>
+            <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?w=800" alt="Médicos conversando" width="800">
+        </header>
+        <main>
+            <p>Fundada em 2015, a <strong>Clínica de Saúde</strong> é referência em atendimento médico e odontológico, oferecendo serviços de alta qualidade e tecnologia avançada. Nosso compromisso é com a saúde e o bem-estar dos nossos pacientes, proporcionando um ambiente acolhedor e seguro.</p>
+            <h3>Nossos Valores</h3>
+            <ul>
+                <li><strong>Empatia: </strong>Compromisso com o bem-estar dos pacientes e sua família.</li>
+                <li><strong>Excelência: </strong>Busca constante pela melhoria dos serviços prestados.</li>
+                <li><strong>Inovação: </strong>Utilização de tecnologias avançadas para oferecer o melhor atendimento.</li>
+                <li><strong>Ética: </strong>Atuação transparente e responsável em todas as áreas da clínica.</li>
+            </ul>
+        </main>
+    </section>
+
+    <hr>
+
+    <!--HORÁRIO DE ATENDIMENTO-->
+    <section id="Horario">
+        <header>
+            <h2>Horário de Atendimento e Serviços</h2>
+            <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=800" alt="Consultório Médico" width="800">
+        </header>
+        <main>
+            <p>Confira abaixo os dias e horários de atendimento para cada uma das especialidades oferecidas em nossa clínica:</p>
+
+            <!--Tabela de Horarios e Atendimentos-->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Serviços</th>
+                        <th>Segunda a Sexta-feira</th>
+                        <th>Sábados</th>
+                        <th>Feriados</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Clinica Geral</td>
+                        <td>08:00 - 18:00</td>
+                        <td>08:00 - 14:00</td>
+                        <td>08:00 - 14:00</td>
+                    </tr>
+                    <tr>
+                        <td>Psicologia</td>
+                        <td>08:00 - 19:00</td>
+                        <td>08:00 - 14:00</td>
+                        <td>08:00 - 14:00</td>
+                    </tr>
+                    <tr>
+                        <td>Pediatria</td>
+                        <td>08:00 - 19:00</td>
+                        <td>08:00 - 18:00</td>
+                        <td> - </td>
+                    </tr>
+                    <tr>
+                        <td>Oftalmologia</td>
+                        <td>08:00 - 19:00</td>
+                        <td>08:00 - 18:00</td>
+                        <td> - </td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </section>
+
+    <hr>
+
+    <!--CONTATO, MAPA E FORMULARIO-->
+    <section id="Contato">
+        <header>
+            <h2>Contato</h2>
+            <img src="https://images.unsplash.com/photo-1581091870620-3c1e7f5b8d6e?w=800" alt="Recepção da Clínica" width="800">
+        </header>
+        <main>
+            <p>Entre em contato conosco para agendar consultas, esclarecer dúvidas ou obter informações sobre nossos serviços. Estamos à disposição para atendê-lo da melhor forma possível.</p>
+
+            <!--Mapa-->
+            <div id="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.1234567890123!2d-46.633308!3d-23.550520!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8b8b8b8b8%3A0x123456789abcdef0!2sCl%C3%ADnica%20de%20Sa%C3%BAde!5e0!3m2!1spt-BR!2sbr!4v1612345678901" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <!--Formulario de Contato-->
+            <form action="#" method="post">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </main>
+    </section>
+</body>
+</html>
